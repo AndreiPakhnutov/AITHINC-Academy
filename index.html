@@ -1,121 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AITHINK Academy - Coming Soon</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #4B3F72; /* Dark Purple Background */
-            color: #fff; /* White Text */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AITHINK Academy</title>
+  <style>
+    /* Basic Reset */
+    body, h1, p, a {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      box-sizing: border-box;
+    }
 
-        .container {
-            text-align: center;
-            padding: 40px;
-            border-radius: 10px;
-            max-width: 80%;
-        }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #4B3F72; /* Dark Purple Background */
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden; /* Hide horizontal scroll */
+    }
 
-        .image-container {
-            width: 100%;
-            max-height: 400px; /* Adjust as needed */
-            overflow: hidden;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+    }
 
-        img {
-            width: 100%;
-            height: auto;
-            object-fit: cover; /* Maintain aspect ratio and cover the area */
-            object-position: top; /* Focus on the top part of the image */
-        }
+    /* Header Section */
+    header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: bold; /* Make heading bolder */
-        }
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
 
-        p {
-            font-size: 1.3em;
-            margin-bottom: 20px;
-        }
+    /* Hero Section */
+    .hero {
+      padding: 50px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
 
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #6AC9F2; /* Light Blue Button */
-            color: #fff;
-            text-decoration: none;
-            border-radius: 30px;
-            font-size: 1.2em;
-            font-weight: bold;
-            transition: background-color 0.3s ease; /* Smooth transition */
-        }
+    .hero-content {
+      flex: 1;
+      padding-right: 20px;
+    }
 
-        .cta-button:hover {
-            background-color: #52B4DB; /* Darker Blue on Hover */
-        }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      font-weight: bold;
+      line-height: 1.2;
+    }
 
-        .contact-info {
-            margin-top: 30px;
-            font-size: 1em;
-        }
+    .hero p {
+      font-size: 1.3em;
+      margin-bottom: 30px;
+      color: #eee;
+    }
 
-        .contact-info a {
-            color: #6AC9F2;
-            text-decoration: none;
-        }
+    .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #6AC9F2; /* Light Blue Button */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
 
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
+    .cta-button:hover {
+      background-color: #52B4DB;
+    }
 
-        /* Media Query for Smaller Screens */
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
+    /* AI Image Placeholder (Simplified) */
+    .ai-image {
+      flex: 1;
+      min-width: 300px; /* Ensure some width on smaller screens */
+      padding-left: 20px;
+      text-align: center;
+    }
 
-            h1 {
-                font-size: 2em;
-            }
+    .ai-image img {
+        width:100%; /* this makes image scale down to fit*/
+        max-width:400px;  /* But do not scale image bigger then this */
+        height: auto; /* keep aspect ratio. */
+    }
 
-            p {
-                font-size: 1.1em;
-            }
+    /* Footer Section */
+    footer {
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #ccc;
+    }
 
-            .cta-button {
-                padding: 12px 25px;
-                font-size: 1em;
-            }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
 
-            .image-container {
-                max-height: 300px;
-            }
-        }
-    </style>
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo {
+        margin-bottom: 10px;
+      }
+
+      .hero {
+        padding: 30px 0;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-content {
+        padding-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .hero h1 {
+        font-size: 2.5em;
+      }
+
+      .hero p {
+        font-size: 1.1em;
+      }
+
+      .ai-image {
+        padding-left: 0;
+      }
+    }
+
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="image-container">
-            <img src="1.png" alt="AITHINK Academy Homepage">
-        </div>
-        <h1>Coming Soon</h1>
-        <p>We're building the future of AI-powered education.</p>
-        <a href="#" class="cta-button">Stay Tuned!</a>
-        <div class="contact-info">
-            <p>Contact us: <a href="mailto:admin@aithinkacademy.com">admin@aithinkacademy.com</a></p>
-        </div>
-    </div>
+
+  <div class="container">
+
+    <header>
+      <div class="logo">AITHINK Academy</div>
+      <!-- Language Selector Placeholder -->
+      <div>English (en)</div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>WELCOME TO AITHINK Academy</h1>
+        <p>Empowering students. Guiding futures. Powered by AI.</p>
+        <a href="#" class="cta-button">Get Started</a>
+      </div>
+
+      <div class="ai-image">
+        <img src="1.png" alt="AI Robot and Student">
+      </div>
+    </section>
+
+    <footer>
+      <p>AITHINK ACADEMY © 2025. ALL RIGHTS RESERVED.  Privacy Policy | Terms of Use</p>
+    </footer>
+
+  </div>
+
 </body>
 </html>
