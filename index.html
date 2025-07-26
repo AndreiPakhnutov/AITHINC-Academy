@@ -1,23 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Under Construction</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0; /* Светло-серый фон */
             font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Light background */
         }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff; /* White container for content */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            max-width: 80%; /* Make container responsive */
+        }
+
         img {
-            max-width: 80%;
-            max-height: 80%;
+            max-width: 100%; /* Image takes up container's full width */
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px; /* Round image corners */
+            display: block; /* Removes space below image */
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333; /* Dark gray heading */
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #666; /* Gray text */
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #888; /* Lighter gray */
+        }
+
+        .contact-info a {
+            color: #007bff; /* Blue color for links */
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="first_page.jpg">
+    <div class="container">
+        <img src="your_image.jpg" alt="Platform Homepage Screenshot">
+        <h1>We're Working On Something Amazing!</h1>
+        <p>Sorry, the website is currently under construction. We'll be back soon with something incredible.</p>
+        <div class="contact-info">
+            <p>Contact us: <a href="mailto:support@example.com">support@example.com</a></p>
+        </div>
+    </div>
 </body>
 </html>
