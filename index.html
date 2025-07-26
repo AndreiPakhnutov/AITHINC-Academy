@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Under Construction</title>
+    <title>AITHINK Academy - Coming Soon</title>
     <style>
         body {
             font-family: sans-serif;
@@ -13,45 +13,58 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0; /* Light background */
+            background-color: #4B3F72; /* Dark Purple Background */
+            color: #fff; /* White Text */
         }
 
         .container {
             text-align: center;
-            padding: 20px;
-            background-color: #fff; /* White container for content */
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            max-width: 80%; /* Make container responsive */
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 80%;
         }
 
         img {
-            max-width: 100%; /* Image takes up container's full width */
+            max-width: 100%;
             height: auto;
             margin-bottom: 20px;
-            border-radius: 8px; /* Round image corners */
-            display: block; /* Removes space below image */
+            border-radius: 10px;
         }
 
         h1 {
-            font-size: 2em;
+            font-size: 2.5em;
             margin-bottom: 10px;
-            color: #333; /* Dark gray heading */
+            font-weight: bold; /* Make heading bolder */
         }
 
         p {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #6AC9F2; /* Light Blue Button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
             font-size: 1.2em;
-            color: #666; /* Gray text */
+            font-weight: bold;
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        .cta-button:hover {
+            background-color: #52B4DB; /* Darker Blue on Hover */
         }
 
         .contact-info {
-            margin-top: 20px;
+            margin-top: 30px;
             font-size: 1em;
-            color: #888; /* Lighter gray */
         }
 
         .contact-info a {
-            color: #007bff; /* Blue color for links */
+            color: #6AC9F2;
             text-decoration: none;
         }
 
@@ -59,17 +72,22 @@
             text-decoration: underline;
         }
 
-        /* Media query for smaller screens */
+        /* Media Query for Smaller Screens */
         @media (max-width: 600px) {
             .container {
-                padding: 15px;
+                padding: 20px;
             }
 
             h1 {
-                font-size: 1.5em;
+                font-size: 2em;
             }
 
             p {
+                font-size: 1.1em;
+            }
+
+            .cta-button {
+                padding: 12px 25px;
                 font-size: 1em;
             }
         }
@@ -77,11 +95,12 @@
 </head>
 <body>
     <div class="container">
-        <img src="1.png" alt="Platform Homepage Screenshot">
-        <h1>We're Working On Something Amazing!</h1>
-        <p>Sorry, the website is currently under construction. We'll be back soon with something incredible.</p>
+        <img src="1.jpg" alt="AITHINK Academy Homepage">
+        <h1>Coming Soon</h1>
+        <p>We're building the future of AI-powered education.</p>
+        <a href="#" class="cta-button">Stay Tuned!</a>
         <div class="contact-info">
-            <p>Contact us: <a href="mailto:support@example.com">support@example.com</a></p>
+            <p>Learn more: <a href="mailto:info@aithinkacademy.com">info@aithinkacademy.com</a></p>
         </div>
     </div>
 </body>
